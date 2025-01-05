@@ -12,6 +12,10 @@ namespace Repository
     public class PumpDbContext : DbContext
     {
         public DbSet<Pump> pumps { get; set; }
+        public DbSet<CompactPump> compactPumps { get; set; }
+        public DbSet<CompactPlusPump> compactPlusPumps { get; set; }
+        public DbSet<SpacePump> spacePumps { get; set; }
+        public DbSet<SpacePlusPump> spacePlusPumps { get; set; }
 
         public PumpDbContext(DbContextOptions<PumpDbContext> options) : base(options)
         {
