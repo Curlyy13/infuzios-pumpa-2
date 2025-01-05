@@ -127,8 +127,8 @@ namespace infuzios_pumpa
             Console.WriteLine("Enter Pump's SerialID to update location: ");
             string serialIdToUpdate = Console.ReadLine();
             Console.WriteLine("Enter new Location (Room201: [201], Room202: [202], Room203: [203]): ");
-            int newRoomNumber = int.Parse(Console.ReadLine());
-            Room newRoom = (Room)newRoomNumber;
+            string input = Console.ReadLine();
+            Room newRoom = Enum.Parse<Room>("Room" +  input);
             logic.ChangePumpLocation(serialIdToUpdate, newRoom);
             Console.WriteLine($"Pump {serialIdToUpdate} moved to {newRoom} successfully!");
             Console.ReadLine();

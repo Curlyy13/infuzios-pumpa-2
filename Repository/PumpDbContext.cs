@@ -33,10 +33,10 @@ namespace Repository
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<SpacePlusPump>().HasData(new SpacePlusPump("1111", Room.Room202, Models.Type.Volumetric));
-            modelBuilder.Entity<CompactPump>().HasData(new CompactPump("1234", Room.Room201, Models.Type.Volumetric));
-            modelBuilder.Entity<CompactPlusPump>().HasData(new CompactPlusPump("1112", Room.Room201, Models.Type.Syringe));
-            modelBuilder.Entity<SpacePump>().HasData(new SpacePump("5555", Room.Room201, Models.Type.Syringe));
+            //modelBuilder.Entity<SpacePlusPump>().HasData(new SpacePlusPump("1111", Room.Room202, Models.Type.Volumetric));
+            //modelBuilder.Entity<CompactPump>().HasData(new CompactPump("1234", Room.Room201, Models.Type.Volumetric));
+            //modelBuilder.Entity<CompactPlusPump>().HasData(new CompactPlusPump("1112", Room.Room201, Models.Type.Syringe));
+            //modelBuilder.Entity<SpacePump>().HasData(new SpacePump("5555", Room.Room201, Models.Type.Syringe));
         }
     }
 }
